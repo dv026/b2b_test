@@ -24,11 +24,8 @@ export const Home = async (
 
     // I am not able to handle overpaged value
     // because JSON SERVER always returns the last page
-    // even if the 'page' param is bigger that the number of the last page
+    // even if the 'page' param is bigger than the number of the last page
     // ...?page=1000000 opens the page containing all articles from DB
-
-    // it's not a good solution and should be changed
-    // but i believe it's out of the scope of the current task
 
     if (!currentPageNumber) {
       redirect('/not-found')

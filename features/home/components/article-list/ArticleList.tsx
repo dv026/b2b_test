@@ -21,6 +21,12 @@ export const ArticleList: FC<ArticleListProps> = ({ articles, isLimitReached, to
   const [isLimitReachedClient, setLimitReachedClient] = useState(false)
   const [isLoading, setLoading] = useState(false)
 
+  // Even though It solves one problem I could find here
+  // I can't put it to prod code
+  // but leave here to discuss
+  // const router = useRouter()
+  // useState(() => router.refresh())
+
   const isPaginationDisabled = isLimitReached || isLoading || isLimitReachedClient
   
   useEffect(() => {
