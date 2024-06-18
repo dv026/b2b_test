@@ -21,14 +21,16 @@ Not to make this file huge I'd with please discuss personally everything that is
 
 ## Getting Started
 
-First, run the development server:
+```bash
+yarn
+```
 
 ```bash
 npx json-server server/db.json
 ```
 
 ```bash
-npm run dev
+yarn dev
 ```
 
 Open [http://localhost:8080](http://localhost:8080) with your browser to see the result.
